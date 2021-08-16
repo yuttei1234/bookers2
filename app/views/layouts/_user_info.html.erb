@@ -1,0 +1,23 @@
+<h2>User Info</h2>
+
+<%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpeg" %>
+
+<table class="table">
+  <tdoby>
+    <tr></tr>
+    <tr>
+      <th>name</th>
+      <th><%= user.name %></th>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <th><%= user.introduction %></th>
+    </tr>    
+  </tdoby>
+</table>
+
+<div class="row">
+  <%= link_to edit_user_path (user.id), class:"btn btn-outline-secondary btn-block" %>
+  <i class="fas fa-user-cog"></i>
+  <% end %>
+</div>
