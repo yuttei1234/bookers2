@@ -1,8 +1,11 @@
 <div class="container px-5 px-sm-0">
   <div class="row">
+
+    <%= render 'layouts/notification' %>
+
     <div class="col-md-3">
-      <%= render 'layouts/_user_info', user: @user %>
-      <%= render 'layouts/_new_book', book: @book %>
+      <%= render 'layouts/user_info', user: @user %>
+      <%= render 'layouts/new_book', book: @book %>
     </div>
 
     <div class="col-md-8 offset-md-1">
@@ -19,7 +22,7 @@
         </thead>
 
         <tbody>
-          <% @books.each do |book| %>
+         <% @books.each do |book| %>
           <tr>
             <td>
             <td><% link_to user_path(book.user.id) do %></td>
@@ -34,6 +37,5 @@
       </table>
 
 
-    </div>
   </div>
 </div>

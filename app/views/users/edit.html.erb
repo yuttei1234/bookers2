@@ -3,9 +3,8 @@
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
       <h2>User Info</h2>
         
-        
-        
        <%= form_with model:@user, local:true do |f| %>
+        <%= render 'layout/errors_message', model:f. object %>
       
       <div class="form-group">
         <label>Name</label>

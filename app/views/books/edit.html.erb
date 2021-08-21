@@ -4,6 +4,7 @@
       <h1>Editing Book</h1>
 
       <%= form_with model:@book, local:true do |f| %>
+        <%= render 'layout/errors_message', model: f. object %>
 
       <div class="form-group">
       <label>Title</label>
