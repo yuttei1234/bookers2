@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
@@ -26,6 +26,7 @@
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
+  padding: 6px, 12px;
  }
 
  .btn-primary {
@@ -38,4 +39,14 @@
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
+ }
+
+ .notification {
+  color: green;
+  margin: 16px 0;
+ }
+
+ #error_explanation {
+  color: red;
+  margin: 16px 0;
  }
