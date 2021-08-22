@@ -4,7 +4,7 @@
       <h2>User Info</h2>
         
        <%= form_with model:@user, local:true do |f| %>
-        <%= render 'layout/errors_message', model:f. object %>
+        <%= render 'layouts/errors_message', model:f.object %>
       
       <div class="form-group">
         <label>Name</label>
@@ -12,8 +12,8 @@
       </div>
   
       <div class="form-group">
-        <label>Image</label>
-          <%= f.attachment_field :profile_image, class:"form-control" %>
+        <label for="inputImage">Image</label>
+          <%= f.attachment_field :profile_image, class:"form-control-file" %>
       </div>
       
        <div class="form-group">
